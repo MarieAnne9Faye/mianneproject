@@ -3,8 +3,7 @@
 {% block title %}Hello MainController!{% endblock %}
     
 {% block body %}
-
-  <nav class="navbar bg-primary">
+<nav class="navbar bg-secondary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="assets/img/logo.jpg" class="img-border" alt="" width="30" height="30">
@@ -16,11 +15,54 @@
       </form>
     </div>
   </nav>
-  <div class="l-navbar" id="nav-bar">
-    <nav class="nav">
-        <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">BBBootstrap</span> </a>
-            <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a> <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> </div>
-        </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
-    </nav>
+<div class="sidebar active" >
+  <div class="logo_content" >
+    <div class="logo">
+      <div class="logo_name">WAZIUP</div>
+    </div>
+    <i  class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav_list">
+    <li>
+      <a href="" class="list-item-active">
+        <i class='bx bx-grid-alt'></i>
+        <span class="link_name">Dashbord</span>
+      </a>
+      <span class="tooltip">Dashbord</span>
+    </li>
+    <li>
+      <a href="">
+        <i class='bx bx-history'></i>
+        <span class="link_name">Historique</span>
+      </a>
+      <span class="tooltip">Historique</span>
+    </li>
+    <li>
+      <a href="">
+        <i class='bx bxs-devices'></i>
+        <span class="link_name">Devices</span>
+      </a>
+      <span class="tooltip">Devices</span>
+    </li>
+    <li>
+      <a href="">
+        <i class='bx bx-cog'></i>
+        <span class="link_name">Paramétres</span>
+      </a>
+      <span class="tooltip">Paramétres</span>
+    </li>
+  </ul>
+  <div class="profile_content">
+    <div class="profile">
+      <div class="profile_detail">
+        <img src="assets/img/logo.jpg" alt="">
+        <div class="name">Admin</div>
+      </div>
+      <i  class='bx bx-log-out' id="log_out"></i>
+    </div>
+  </div>
+</div>
+<div class="home_content">
+  
 </div>
 {% endblock %}
