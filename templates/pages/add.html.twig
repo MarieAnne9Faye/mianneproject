@@ -1,0 +1,41 @@
+
+{% extends 'base.html.twig' %}
+{% block body %}
+
+{% include 'main/index.html.twig' %}
+<div class="home_content">
+  <div class="container">
+    {% for message in app.flashes('success') %}
+    <div class="alert alert-success">
+        {{ message }}
+    </div>
+    {% endfor %}
+      <div class contant>
+        <form action="{{path('add_user')}}" method= "post" >
+            <div class="mb-3">
+              <label for="prenom" class="form-label">Prenom</label>
+              <input type="text" name="prenom" class="form-control" >
+            </div>
+
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" name="nom" class="form-control" >
+              </div>
+
+              <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" name="age" class="form-control" >
+              </div>
+
+              <div class="mb-3">
+                <label for="classe" class="form-label">Classe</label>
+                <input type="text" name="classe" class="form-control" >
+              </div>
+       
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+          </form>
+
+      </div>
+  </div>
+</div>
+{% endblock %}
