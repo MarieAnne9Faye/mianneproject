@@ -187,11 +187,12 @@
   }
   .home_content{
     position: absolute;
-    height: 100%;
+    height: 85vh;
     width: calc(100% - 78px);
     left: 78px;
     transition: all 0.5s ease;
     background: #fff;
+    overflow-y: auto;
   }
   .active ~ .home_content{
     width: calc(100% - 240px);
@@ -202,6 +203,9 @@
   }
   .active ul li a .list-item-active{
     color: #333333;
+  }
+  .navigation{
+    width: 100px;
   }
   @media (max-width: 1216px) {
     /*.sidebar, .active {
@@ -221,3 +225,19 @@
   
   }
   
+  .content{
+    width: 80%;
+    margin-top: 95px;
+    margin:auto;
+  }
+
+  table{
+    border: #333333 solid 1px;
+    font-size: 12px;
+  }
+
+  .myline{
+    height: 5px;
+  }
+
+ 
